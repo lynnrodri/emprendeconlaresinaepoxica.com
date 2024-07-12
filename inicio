@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Descarga de PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Regístrate para descargar tu PDF gratuito</h1>
+        <form id="registerForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Descargar PDF</button>
+        </form>
+        <div id="downloadLink" style="display: none;">
+            <p>Gracias por registrarte. Haz clic en el enlace para descargar tu PDF.</p>
+            <a href="ruta-al-archivo.pdf" target="_blank">Descargar PDF</a>
+            <p>Después de descargar, visita nuestra <a href="pagina-destino.html">página especial</a>.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
