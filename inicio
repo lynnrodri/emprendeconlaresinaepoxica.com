@@ -24,3 +24,77 @@
     </div>
     <script src="scripts.js"></script>
 </body>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#downloadLink {
+    margin-top: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+// scripts.js
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    // Aquí podrías enviar los datos a tu servidor o base de datos
+
+    // Mostrar el enlace de descarga
+    document.getElementById('downloadLink').style.display = 'block';
+
+    // Ocultar el formulario de registro
+    document.getElementById('registerForm').style.display = 'none';
+});
